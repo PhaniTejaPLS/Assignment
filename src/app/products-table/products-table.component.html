@@ -1,0 +1,30 @@
+<table>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>productComponent {{isChecked}}
+        </tr>
+        <tr>       
+            <td><strong>Sporting Goods</strong></td>            
+        </tr>
+        <tr *ngFor = "let item of filteredArray">
+            <td *ngIf = "item.category == 'Sporting Goods'">
+                {{item.name}}
+            </td>
+            <td *ngIf = "item.category == 'Sporting Goods'">
+                {{item.price}}
+            </td>
+        </tr>            
+        <tr>       
+            <td><strong>Electronics</strong></td>        
+        </tr>
+        <tr *ngFor = "let item of filteredArray">
+            <td *ngIf = "item.category == 'Electronics'">
+                {{item.name}}
+            </td>
+            <td *ngIf = "item.category == 'Electronics'">
+                {{item.price}}
+            </td>
+
+        </tr>
+</table>
+

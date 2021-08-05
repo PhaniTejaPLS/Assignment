@@ -1,0 +1,4 @@
+<div >
+    <app-search-bar (goodsInStock) = "inStockGoods($event)" (searchResult)="searchForGoods($event)"></app-search-bar>
+    <app-products-table [searchResult]= "searchResultData" [isChecked]="isChecked" ></app-products-table>
+</div>

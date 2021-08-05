@@ -1,0 +1,7 @@
+<div>
+    <input type="text" name="searchBox" id="searchBox" placeholder="Search.." [(ngModel)]="searchGoods">
+    <input type="button" value="Search" (click)="searchForGoods()">
+    <div>
+        <input type="checkbox" name="inStock" id="inStock" [(ngModel)]="isChecked" (change) ="areGoodsInStock()" >Only Show Products in Stock {{isChecked}}
+    </div>
+</div>
